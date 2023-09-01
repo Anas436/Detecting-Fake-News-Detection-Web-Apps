@@ -5,7 +5,7 @@ st.set_page_config(page_title='Title',
                    page_icon=':globe_with_meridians:',
                    layout='centered')
 
-st.header('Fake News Classification.')
+st.header('Fake News Classification.', anchor=False)
 
 text_user = st.text_area(label='text_label',
                          value='Insert a news title here.',
