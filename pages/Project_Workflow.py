@@ -1,8 +1,9 @@
 import streamlit as st
 from PIL import Image
-from pathlib import Path
+
+st.title('Project Workflow', anchor=None)
 
 image = Image.open('./pictures/workflow.png')
 
-st.image(image, caption='Sunrise by the mountains')
+st.image(image, caption='Project Workflow')
    

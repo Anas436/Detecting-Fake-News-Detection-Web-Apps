@@ -56,9 +56,11 @@ run_button = st.button('Classify')
 clean_text = clean.pipline_cleaning_step(text_input)
 text_tf_idf = tf_idf.transform([clean_text])
 pred = xgb_model_loaded.predict_proba(text_tf_idf)
-
+label_0 = "{0:0.4f}".format(pred[0][0])
+label_1 = "{0:0.4f}".format(pred[0][1])
 if run_button:
-    st.write(pred)
+    st.write('True: ', label_0)
+    st.write('Fake: ', label_1)    
 else:
     st.text('Classification results.')
 
