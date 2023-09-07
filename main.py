@@ -44,16 +44,21 @@ tf_idf = pickle.load(open('models/Best_tfidf_vectorizer_Final_model_X1.pkl', "rb
 
 st.header('Fake News Classification.', anchor=False)
 
-text_user = st.text_area(label='text_label',
+text_input = st.text_area(label='text_label',
                          value='Insert a news title here.',
                          disabled=False,
+                         height=400,
                          label_visibility='hidden')
 
 
 run_button = st.button('Classify')
+
+clean_text = clean.pipline_cleaning_step(text_input)
+text_tf_idf = tf_idf.transform([clean_text])
+pred = xgb_model_loaded.predict_proba(text_tf_idf)
+
 if run_button:
-    st.text('True: 0.6')
-    st.text('False: 0.4')
+    st.write(pred)
 else:
     st.text('Classification results.')
 
