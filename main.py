@@ -59,8 +59,8 @@ pred = xgb_model_loaded.predict_proba(text_tf_idf)
 label_0 = "{0:0.4f}".format(pred[0][0])
 label_1 = "{0:0.4f}".format(pred[0][1])
 if run_button:
-    st.write('True: ', label_0)
-    st.write('Fake: ', label_1)    
+    st.write('True: ', label_1)
+    st.write('Fake: ', label_0)    
 else:
     st.text('Classification results.')
 
