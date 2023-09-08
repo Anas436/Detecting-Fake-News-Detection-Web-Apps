@@ -17,10 +17,10 @@ st.write("These metrics highlight the exceptional capabilities of our model in d
 st.subheader('Classification Report')
 st.write("To further dissect the model's performance, we provide a comprehensive classification report:")
 st.markdown(
-    """
-| | precision | recall | f1-score | support|
+"""
+| q | precision | recall | f1-score | support|
  
-| | --- | --- | --- | --- |
+| q | --- | --- | --- | --- |
 | 0 | 0.98 | 0.98 | 0.98 | 1129 |
 | 1 | 1.00 | 0.99 | 0.99 | 5350 |
 |accuracy | | | 0.99 |6479|
