@@ -1,6 +1,10 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(page_title='Title',
+                   page_icon=':globe_with_meridians:',
+                   layout='centered')
+
 st.title('Project Workflow', anchor=None)
 
 image = Image.open('./pictures/workflow.png')

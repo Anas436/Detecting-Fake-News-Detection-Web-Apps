@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title='Title',
+                   page_icon=':globe_with_meridians:',
+                   layout='centered')
+
 st.title('Model Evaluation', anchor=None)
 st.write('The culmination of our model development efforts led to an impressive performance in the evaluation phase. The final evaluation of the model yielded the following results:')
 st.markdown(
@@ -26,22 +30,9 @@ data = {'precision ': ['0.98', '1.00', ' ', '0.99', '0.99'],
         }
   
 # Create DataFrame
-df = pd.DataFrame(data, index=[0, 1, 'accuracy', 'macro avg', 'weighted avg'])
+df = pd.DataFrame(data, index=['class 0 (Fake)','class 1 (Real)', 'accuracy', 'macro avg', 'weighted avg'])
 st.write(df)
 
-st.markdown(
-"""
-| q | precision | recall | f1-score | support|
- 
-| q | --- | --- | --- | --- |
-| 0 | 0.98 | 0.98 | 0.98 | 1129 |
-| 1 | 1.00 | 0.99 | 0.99 | 5350 |
-|accuracy | | | 0.99 |6479|
-|macro avg | 0.99 | 0.99 | 0.99 | 6479|
-|weighted avg | 0.99 | 0.99 | 0.99 | 6479 |
-
-"""
-)
 st.write("This classification report provides a more detailed breakdown of our model's performance for each class. For class 0 (representing genuine news), the model exhibits a precision and recall of 0.98, resulting in a balanced F1-score of 0.98. Class 1 (representing fake news) displays exemplary precision, recall, and F1-score values, all at 1.00. These metrics affirm the model's exceptional ability to accurately classify both genuine and fake news articles.")
 st.write('While these numbers can mean that the model overfitting the data. In order to ensure the model’s consistency I tried to use the same model with the same technique and train it on a different dataset from kaggle competition Fake News. You can check the results. For Public Score is 0.98012, and for Private Score is 0.97609 which is very consistent on different test sets as well as with the same 0.98 accuracy I got while testing the model before submission.')
 st.write('In conclusion, the model evaluation phase solidifies the efficacy of our fake news detection model, demonstrating its accuracy, precision, recall, and overall robustness.')

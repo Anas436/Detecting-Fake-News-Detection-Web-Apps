@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.set_page_config(page_title='Title',
+                   page_icon=':globe_with_meridians:',
+                   layout='centered')
+
 st.title('Exploratory Data Analysis (EDA)', anchor=None)
 st.header(' ', divider='rainbow')
 st.write('In the initial stages of our project, we conducted an extensive Exploratory Data Analysis (EDA) to gain insights into the dataset. This critical phase allowed us to better understand our data, identify patterns, and make informed decisions for subsequent project steps. Below is a concise summary of our EDA process:')

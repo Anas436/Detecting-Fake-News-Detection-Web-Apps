@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.set_page_config(page_title='Title',
+                   page_icon=':globe_with_meridians:',
+                   layout='centered')
+                   
 st.title('Model Development', anchor=None)
 st.header(' ', divider='rainbow')
 
