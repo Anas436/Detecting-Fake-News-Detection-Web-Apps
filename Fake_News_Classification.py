@@ -45,7 +45,7 @@ tf_idf = pickle.load(open('models/Best_tfidf_vectorizer_Final_model_X1.pkl', "rb
 st.header('Fake News Classification.', anchor=False)
 
 text_input = st.text_area(label='text_label',
-                         value='Insert a news title here.',
+                         value='Paste news text here.',
                          disabled=False,
                          height=400,
                          label_visibility='hidden')
