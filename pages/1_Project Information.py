@@ -3,13 +3,13 @@ import streamlit as st
 st.title('Detecting Fake news using AI', anchor=None)
 st.header(' ', divider='rainbow')
 
-st.subheader('Project Background', divider='rainbow')
+st.subheader('Project Background')
 st.write('Fake news poses a severe threat to the integrity of information dissemination in Liberia. With the increasing availability of social media platforms and the rapid sharing of information, distinguishing between authentic news and fake news has become increasingly challenging for the general public.')
 st.write('Liberia, like many other countries in West Africa, has faced detrimental effects of misinformation and disinformation, which have led to social unrest, political instability, and public mistrust. Given that the nation is preparing for its national elections in October 2023, there will likely be a surge of misinformation from politicians in the media. This has the potential to disrupt Liberia’s democracy and plunge the nation into a crisis similar to the one it suffered 33 years ago.')
 st.write('To combat this problem, there is a need to leverage the power of artificial intelligence (AI), which can be a transformative solution by using AI algorithms and machine learning techniques.')
 st.write('Consequently, misinformation can spread rapidly, causing confusion, divisiveness, and even harm to individuals and communities as seen in the case of the 2020 senatorial election.         The need for an AI-powered solution arises to alleviate the burden on individuals to manually fact-check and verify news articles by harnessing the capabilities of machine learning and AI.')
 
-st.subheader('Project goals', divider='rainbow')
+st.subheader('Project goals')
 st.write('The primary objective of the Fake News Detection project in Liberia is to develop an automated system that can analyze news content, identify patterns, and assess the credibility of information, thereby enabling citizens to make more informed decisions. These are a few of the goals of this project:')
 
 st.markdown(
