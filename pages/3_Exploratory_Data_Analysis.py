@@ -7,7 +7,6 @@ st.write('In the initial stages of our project, we conducted an extensive Explor
 
 st.markdown(
 """
-The following list won't indent no matter what I try:
 - **Data Overview:**
     - Our dataset consists of a total of 33,673 entries and 605 columns, with data types including datetime, float, and object.
     - Several columns contained a significant number of missing values.
