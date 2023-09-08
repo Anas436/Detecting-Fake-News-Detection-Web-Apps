@@ -6,6 +6,7 @@ st.set_page_config(page_title='Title',
                    layout='centered')
 
 st.title('Project Workflow', anchor=None)
+st.header(' ', divider='rainbow')
 
 image = Image.open('./pictures/workflow.png')
 

@@ -6,6 +6,7 @@ st.set_page_config(page_title='Title',
                    layout='centered')
 
 st.title('Model Evaluation', anchor=None)
+st.header(' ', divider='rainbow')
 st.write('The culmination of our model development efforts led to an impressive performance in the evaluation phase. The final evaluation of the model yielded the following results:')
 st.markdown(
 """
