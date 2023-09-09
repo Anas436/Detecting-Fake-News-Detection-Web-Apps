@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title='Title',
+st.set_page_config(page_title='News Classification',
                    page_icon=':globe_with_meridians:',
                    layout='centered')
 
